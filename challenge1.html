@@ -8,22 +8,28 @@ Instructions
     Use an id selector to set #intro font-size to 20px 
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<style>
-/* element selector */
+  <head>
+    <style>
+      /* element selector */
+      p {
+        color: blue;
+      }
+      /* class selector */
+      .highlight {
+        background-color: yellow;
+      }
+      /* id selector */
 
-/* class selector */
-
-/* id selector */
-</style>
-</head>
-<body>
-
-<p id="intro">Welcome to CSS selectors.</p>
-<p>This is a normal paragraph.</p>
-<p class="highlight">This paragraph is highlighted.</p>
-
-</body>
+      #intro {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="intro">Welcome to CSS selectors.</p>
+    <p>This is a normal paragraph.</p>
+    <p class="highlight">This paragraph is highlighted.</p>
+  </body>
 </html>
