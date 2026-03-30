@@ -17,21 +17,25 @@ Set the .container gap to 10px
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- add viewport meta tag here -->
     <style>
       img {
-        /* max-width and height */
+        max-width: 100%;
+        height: auto;
       }
 
       .content {
         padding: 20px;
-        /* width */
+        width: 100%;
       }
 
       .container {
         background-color: #f1f1f1;
         padding: 10px;
-        /* display, flex-direction, gap */
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
       }
 
       .container > div {
