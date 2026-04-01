@@ -8,6 +8,8 @@ main {
 div {
   width: 80px;
   height: 50px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #first-div {
