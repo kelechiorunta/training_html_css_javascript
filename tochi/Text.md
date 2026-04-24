@@ -11,4 +11,4 @@
 <h1>Main heading
  -->
 
-Using the tags above, recreate the Bonnie.png on the 
+Using the tags above, recreate the Bonnie.png template
