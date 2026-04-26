@@ -12,12 +12,3 @@
  -->
 
 Using the tags above, recreate the Bonnie.png template
-
-<h1>Poem Lyrics</h1>
-<hr>
-<p>This is a popular song lyrics I wrote titled: <b>My Bonnie</b></p>
-<br>
-<em><pre>My bonnie lies over the ocean.</pre></em>
-<em><pre>My bonnie lies over the sea.</pre></em>
-<em><pre>My bonnie lies over the ocean.</pre></em>
-<em><pre>Oh, bring back my bonnie to me.</pre></em>
