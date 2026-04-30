@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <div>
+  <fieldset>
+    <legend>Account Information</legend>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="password">
+
+    <p>Account Type:</p>
+    <input type="radio" id="personal" name="acc_type" value="personal">
+    <label for="personal">Personal</label>
+    <input type="radio" id="business" name="acc_type" value="business">
+    <label for="business">Business</label>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="can">Canada</option>
+    </select>
+
+    <p>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the terms and conditions</label>
+    </p>
+
+    <button type="submit">Register Now</button>
+  </fieldset>
+  </div>
+</form>
+
+</body>
+</html>
