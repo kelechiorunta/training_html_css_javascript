@@ -13,8 +13,6 @@ app.post("/user", (req, res) => {
   res.status(200).json({ name, email });
 });
 
-
-
 const server = createServer(app);
 
 server.listen(3650, () => console.log("Server is listening at PORT 3650"));
