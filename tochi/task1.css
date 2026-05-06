@@ -1,6 +1,30 @@
-header{
-    background-color: black;
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  /* float: left; */
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+nav {
+  /* float: left; */
+  color: white;
+  /* background-color: #641818; */
+  overflow: hidden;
+  border-radius: 10px;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-transform: none;
+    float: left;
     color: white;
+<<<<<<< HEAD
     text-align: center;
     padding: 10px;
     border-radius: 20px;
@@ -49,3 +73,11 @@ nav{
     overflow: hidden;
     border-radius: 20px;
 }
+=======
+    /* li {
+      text-transform: none;
+      color: white;
+    } */
+  }
+}
+>>>>>>> 953cef8 (fixed indentation)
