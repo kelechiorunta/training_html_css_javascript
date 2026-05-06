@@ -17,15 +17,33 @@
             overflow: hidden;
             border-radius: 10px;
         }
+        #title {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .list1 {
+            display: inline-block;
+            margin-right: 20px;
+            background-color: aliceblue;
+        }
+        * {box-sizing: border-box;}
+        nav[data-list="menulist"] 
+        { display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+           
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>My Website</h1>
-        <nav>
+        <h1 id="title">My Website</h1>
+        <nav data-list="menulist">
             
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li class="list1"><a href="#">Home</a></li>
+                <li class=><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             
