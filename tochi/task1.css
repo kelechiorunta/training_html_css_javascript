@@ -24,10 +24,10 @@ nav {
     text-transform: none;
     float: left;
     color: white;
-<<<<<<< HEAD
     text-align: center;
     padding: 10px;
     border-radius: 20px;
+}
 }
 nav
 {
@@ -73,11 +73,3 @@ nav{
     overflow: hidden;
     border-radius: 20px;
 }
-=======
-    /* li {
-      text-transform: none;
-      color: white;
-    } */
-  }
-}
->>>>>>> 953cef8 (fixed indentation)
