@@ -12,6 +12,34 @@
             text-align: center;
             border-radius: 20px;
         }
+        div p {
+            color: red;
+            font-size: 100px;
+            background-color: black;
+            padding: 10px;
+        }
+
+        div > h2 {
+            color: white;
+            font-size: 50px;
+            background-color: blue;
+            padding: 10px;
+        }
+        h1 + nav {
+            background-color: #641818;
+            overflow: hidden;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        h2 ~ p {
+            color: rgb(193, 237, 193);
+            font-size: 20px;
+            background-color: rgb(201, 64, 199);
+            font-family: fantasy;
+        }
+
+
         nav {
             background-color: #641818;
             overflow: hidden;
@@ -42,20 +70,34 @@
         <h1 id="title">My Website</h1>
         <nav data-list="menulist">
             
-                <li class="list1"><a href="#">Home</a></li>
-                <li class=><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
             
         </nav>
     </header>
     <main>
         <section>
-            <h2>Welcome to My Website</h2>
+            <h2>This is just a sample</h2>
+            <p>Demostration on Subsequent-sibling Combinator</p>
+            <div>
+ <h2>Welcome to My Website</h2>
+            </div>
+           
+            <div>
+                <p>This is to demostrate the use of Decendant Combinator</p>
+            </div>
             <p>This is a sample website to demonstrate the use of an external stylesheet. The styles for this page are defined in the "task1.css" file.</p>
         </section>
         <section>
-            <h2>About Us</h2>
+            <div>
+<h2>About Us</h2>
+            </div>
+            
+            <div>
+                <p>This is to demostrate the use of Child Combinator</p>
+            </div>
             <p>We are a team of web developers passionate about creating beautiful and functional websites. Our goal is to provide high-quality web solutions to our clients.</p>
         </section>
     </main>
