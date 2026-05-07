@@ -1,0 +1,9 @@
+section h2 {background-color: blue}
+section > p {background-color: red; color: white}
+/* div ~ p {background-color: green;}} */
+section > div {background-color: green;}
+button:hover {background-color: rgb(16, 16, 15); color: rgb(248, 246, 246);}
+a:visited {color:green; background-color:yellow;}
+section h2:first-child {background-color: purple;}
+
+
