@@ -10,6 +10,24 @@ header {
   /* justify-content: space-between; */
   align-items: center;
 }
+
+section h2 {
+  font-size: 70px;
+  background-color: blue;
+  color: white;
+ 
+}
+
+section > p{
+    color: yellow;
+}
+section div + p{
+    color: red;
+}
+section div ~ p{
+    color: rgb(226, 14, 177);
+}
+
 nav {
   /* float: left; */
   color: white;
@@ -41,6 +59,7 @@ nav
     box-sizing: border-box;
     background-color: aqua;
 }
+
 p{
     font-size: 20px;
     color: black;
