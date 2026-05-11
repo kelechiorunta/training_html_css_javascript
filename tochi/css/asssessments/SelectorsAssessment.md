@@ -1,0 +1,166 @@
+CSS Selectors Assessment Task
+Build and style a simple profile webpage using different CSS selectors.
+Objective
+Practice using:
+
+Tag selectors
+ID selectors
+Class selectors
+Attribute selectors
+Combinator selectors
+Pseudo-class selectors
+Pseudo-element selectors
+
+Starter HTML
+<!DOCTYPE html>
+<html lang="en">  
+<head>    
+  <meta charset="UTF-8" />    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <title>CSS Selectors Assessment</title>    
+  <link rel="stylesheet" href="style.css" />  
+</head>  
+<body>    
+  <header id="main-header">      
+  <h1>My Profile</h1>      
+  <nav>        
+    <ul class="nav-list">          
+      <li><a href="#">Home</a></li>          
+      <li><a href="#">Projects</a></li>          
+      <li><a href="#">Contact</a></li>        
+    </ul>      
+  </nav>    
+  </header>    
+    <main>      
+    <section class="profile-card">        
+      <img src="https://via.placeholder.com/150" alt="profile image"/>
+      <h2 class="username">Jane Doe</h2>        
+      <p class="bio">          
+        Frontend developer passionate about CSS and UI design.        
+      </p>        
+      <button class="btn">Follow</button>      
+    </section>      
+    <section class="skills">        
+      <h3>Skills</h3>        
+      <ul>          
+        <li class="skill">HTML</li>          
+        <li class="skill">CSS</li>          
+        <li class="skill">JavaScript</li>        
+      </ul>      
+    </section>      
+    <form class="contact-form">        
+      <input type="text" placeholder="Your Name" />        
+      <input type="email" placeholder="Your Email" />        
+      <button type="submit">Send</button>      
+    </form>    
+  </main>  
+</body>
+</html>
+
+Tasks
+1. Tag Selector
+Style all <h1> elements:
+Change the text color
+Center the text
+
+
+Example:
+h1 {  color: blue;  text-align: center;}
+
+2. ID Selector
+Target the #main-header:
+Add a dark background color
+Add padding
+
+3. Class Selector
+Target .profile-card:
+Add a border
+Add padding
+Add rounded corners
+
+
+
+4. Attribute Selector
+Target:
+<input type="email" />
+Requirements:
+Add a different border color
+Add padding
+
+
+Example:
+input[type='email'] {  border: 2px solid green;}
+
+5. Combinator Selector
+Descendant Selector
+Style all links inside navigation:
+nav a {}
+Requirements:
+Remove underline
+Change text color
+
+
+
+Child Selector
+Style only direct <li> children of .nav-list
+.nav-list > li {}
+Requirements:
+Display items inline
+Add spacing
+
+
+
+6. Pseudo-Class Selectors
+Hover Effect
+When hovering over .btn:
+
+
+Change background color
+Change cursor to pointer
+
+
+Example:
+.btn:hover {}
+
+Focus Effect
+When an input is focused:
+
+
+Change border color
+Remove default outline
+
+
+Example:
+input:focus {}
+
+7. Pseudo-Element Selector
+Add a star before every skill item:
+Example:
+.skill::before {  content: '⭐ ';}
+
+Bonus Tasks
+Bonus 1
+Style the first skill differently:
+.skill:first-child {}
+
+Bonus 2
+Style every odd skill item:
+.skill:nth-child(odd) {}
+
+Expected Learning Outcome
+By the end of this task, you should understand:
+
+
+How selectors target elements
+
+
+The difference between classes and IDs
+
+
+How combinators work
+
+
+How pseudo-classes react to user interaction
+
+
+How pseudo-elements add generated content
+
