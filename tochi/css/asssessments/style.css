@@ -1,0 +1,56 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+#main-header{
+    background-color: black;
+    padding: 20px;
+
+}
+
+.profile-card{
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 25px;
+    position: relative;
+}
+
+
+.skill::before{
+    content: "x";
+}
+.skill:first-child{
+    color: yellow;
+}
+
+.skill:nth-child(2){
+    color: orange;
+}
+
+
+input[type='email']{
+
+    border-color: brown;
+    padding: 28px;
+}
+
+.contact-form input:first-child{
+    border: 2px solid green;
+    
+}
+nav a{
+    text-decoration:none ;
+    color: purple;
+}
+
+.nav-list > li{
+
+    display:inline;
+    word-spacing: 35px;
+}
+
+btn :hover{
+    background-color: green;
+    cursor: pointer;
+}
