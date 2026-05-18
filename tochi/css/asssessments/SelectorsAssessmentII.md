@@ -81,6 +81,8 @@ Requirements:
 
 Change button background color
 Change text color
+
+
 Child Selector
 
 Target direct children inside .products.
@@ -92,6 +94,7 @@ Requirements:
 
 Set width
 Display inline-block
+
 Adjacent Sibling Selector
 
 Target the paragraph immediately after <h1>.
@@ -178,8 +181,76 @@ How pseudo-elements insert generated content
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors Practice</title>
+    <style>
+    :root{
+      --primary-color: green;
+    }
 
-    <link rel="stylesheet" href="style.css" />
+
+
+      <!-- element selctor, tageting all the <h1> -->
+      h1{
+        font-size: 30px;
+        color: green;
+        text align: center;
+      }
+
+<!-- ID selector, targets an element with an ID attribute hero -->
+      #hero{
+        background-color: purple;
+        padding: 30px;
+        text-align: center;
+      }
+      <!-- class selectors targets elements using a class attribute with the value product-card -->
+      .product-card{
+        border: 40px;
+        padding: 30
+        margin: 20px
+        border-radius: 30px;
+      }
+      <!-- An Attribute Selector, tageting element based on there attribute values -->
+      input[type=email] {
+        border-color: blue;
+        padding: 30px;
+        background-color: pink;
+      }
+
+      product button{
+        background-color: yellow;
+        color: purple;
+      }
+
+      product > product-card{
+        width: 50px;
+        display: inline-block
+      }
+
+      h1 + p{
+        font: italics;
+        color: red;
+      }
+      buy-btn:hover{
+        background-color: gray;
+        color: black;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: orange;
+      }
+
+      .product-card:first-child{
+        background-color: green;
+      }
+
+
+
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="style2.css" />
   </head>
 
   <body>

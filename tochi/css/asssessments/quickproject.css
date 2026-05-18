@@ -1,0 +1,26 @@
+
+/* Universal Selector */
+* {
+    padding: 0%;
+    margin: 0px;
+}
+
+/* Element Selector */
+body {
+    background-color: bisque;
+    color: #333;
+}
+/* Class Selector */
+.hero {
+    padding: 100px;
+}
+.hero__title {
+    color: firebrick;
+}
+.hero__description {
+    color: purple;
+}
+.hero__highlight {
+    color: rgb(199, 199, 224);
+    font-weight: bold;
+}
