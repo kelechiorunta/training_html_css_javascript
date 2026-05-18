@@ -1,0 +1,142 @@
+CSS Selectors Practice Task
+
+Build a small “Student Dashboard” page and use different CSS selectors to style elements.
+
+Your Tasks
+1. Universal Selector
+
+Use the universal selector to:
+
+remove default margin
+remove default padding
+set box-sizing: border-box
+2. Element Selector
+
+Style all button elements:
+
+background color
+padding
+rounded corners
+cursor pointer
+3. ID Selector
+
+Target:
+
+#main-title
+
+Add:
+
+center alignment
+custom color
+larger font size
+4. Class Selector
+
+Style:
+
+.student-card
+
+Add:
+
+border
+padding
+margin
+shadow
+5. Multiple Class Selector
+
+Target only:
+
+.student-card.active
+
+Add:
+
+different background color
+thicker border
+6. Descendant Selector
+
+Style only the <p> inside .student-card
+
+Example:
+
+.student-card p
+7. Child Selector
+
+Style direct <li> children of .subjects
+
+Example:
+
+.subjects > li
+8. Attribute Selector
+
+Target:
+
+input[type="email"]
+
+Add:
+
+different border color
+9. Pseudo-class Selector
+
+Add hover effect to buttons:
+
+button:hover
+
+Change:
+
+background color
+transform
+transition
+10. nth-child Selector
+
+Style:
+
+first subject differently
+even list items differently
+
+Examples:
+
+.subjects li:first-child
+.subjects li:nth-child(even)
+Bonus Challenges
+Bonus 1
+
+Style all inputs when focused:
+
+input:focus
+Bonus 2
+
+Add this selector:
+
+.student-card:hover
+
+Scale card slightly on hover.
+
+
+HTML Structure
+<div class="dashboard">
+  <h1 id="main-title">Student Dashboard</h1>
+
+  <div class="student-card active">
+    <h2 class="student-name">John Doe</h2>
+    <p>Email: john@example.com</p>
+    <button>View Profile</button>
+  </div>
+
+  <div class="student-card">
+    <h2 class="student-name">Jane Smith</h2>
+    <p>Email: jane@example.com</p>
+    <button>View Profile</button>
+  </div>
+
+  <ul class="subjects">
+    <li>Mathematics</li>
+    <li>Physics</li>
+    <li>Chemistry</li>
+    <li>Biology</li>
+  </ul>
+
+  <form>
+    <input type="text" placeholder="Enter name" />
+    <input type="email" placeholder="Enter email" />
+    <button type="submit">Submit</button>
+  </form>
+</div>
