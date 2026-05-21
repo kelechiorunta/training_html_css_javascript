@@ -1,0 +1,13 @@
+.gas {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.lorem {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* overflow: hidden; */
+  /* writing-mode: vertical-lr; */
+  text-orientation: mixed;
+  text-indent: 25px;
+  max-width: 400px;
+}
