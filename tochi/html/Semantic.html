@@ -7,15 +7,40 @@ Please use semantic and form elements to recreate Semantic.png
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* nav ul li a[href="#about"] {
+            color: red;
+        }
+        nav ul > li button {
+            background-color: blue;
+            color: white;
+        } */
+         /* button ~ li button {
+            background-color: blue;
+            color: white;
+        } */
+         /* nav ul li + li button {
+            background-color: blue;
+            color: white;
+         } */
+          nav ul li + .signup_link button {
+            background-color: blue;
+            color: white;
+          }
+
+
+    </style>
 </head>
 <body>
     <header>
     <h1>Sematic HTML Markup</h1>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <button>log in</button>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="signup_link"><button type="button">Sign Up</button></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     </header>
