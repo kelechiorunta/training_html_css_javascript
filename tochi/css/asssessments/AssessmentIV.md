@@ -39,6 +39,46 @@ Instructions
    GLOBAL STYLES
 ========================= */
 
+:root {
+    --primary-color: #00bcd4;
+   --secondary-color: #7c4dff;
+   --card-bg: rgba(255, 255, 255, 0.08);
+   --text-color: #ffffff;
+   --border-radius: 20px;
+   --shadow:
+   0 10px 30px rgba(0, 0, 0, 0.25);
+
+   }
+
+/* Answer to Question 2 */
+   [data-role="frontend"] {border: 2px solid var(--primary-color);}
+
+   /*Answer to Question 3 */
+   .card {border: 2px solid var(--primary-color);}
+  
+  /*Answer to Question 4 */
+
+  h2 + p { margin-top: 10px;
+   line-height: 1.7;
+   opacity: 0.8;}
+
+   /*Answer to Question 5 */
+   .card:hover {
+   transform: translateY(-12px);
+   box-shadow: 0 20px 40px rgba(0, 188, 212, 0.3);
+   }
+   Pseudo Class selector
+
+   /*Answer to Question 6 */
+
+   .tag::before {
+   transform: translateY(-12px);
+   box-shadow: 0 20px 40px rgba(0, 188, 212, 0.3);
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
