@@ -1,0 +1,30 @@
+.div1 {background-color: green;
+    position: sticky;
+    top: 50px;
+    /* top: 20px;
+    left: 0px; */
+}
+.div2 {background-color: red;
+    
+    /* position: sticky; */
+    /* top: 20px;
+    left: 0px; */
+}
+div {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+section {
+    /* position: relative; */
+    width: 500px;
+    height: 900px;
+    background-color: black;
+    overflow-y: scroll;
+}
+button {padding: 4px;
+    width:100px;
+    /* box-sizing: border-box; */
+}
+.btn1 {box-sizing: content-box;}
+.btn2 {box-sizing: border-box;}
