@@ -93,7 +93,8 @@ Explain the CSS box model and list its four main parts in order from inside to o
 
 Box Model is a concept in CSS that describes how every HTML element is displayed as a rectangular box on a webpage.
 The order ia as follows
-a. Cotent
+a. Content
+``` @
 b. padding
 c. border
 d. Margin
