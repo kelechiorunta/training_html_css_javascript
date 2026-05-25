@@ -85,7 +85,7 @@ Describe the difference between relative, absolute, and fixed positioning in CSS
 
 a) Relative Positioning: it makes an elemnet to stay in stay in its normal position in the document while allowing it to be moved about 
 b) Absolute Positioning: It allows an element to be positioned to the nearest positioned ancestors
-C)Fixed Positioning: Allows an element to stays visible during scrolling
+C)Fixed Positioning: Allows an element to be positioned relative to the viewport. It stays visible and fixed during scrolling.
 
 4. CSS Box Model
 
