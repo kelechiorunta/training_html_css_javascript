@@ -1,19 +1,25 @@
 Section B — Theory Questions
 
 1. What is the purpose of the viewport meta tag in responsive web development?
+ANS. Viewpoint meta tag is used to control how a webpage is displayed and scaled on different screen sizes, especially on mobile devices.
+
 2. Differentiate between:
    justify-content
    align-items
-
 in Flexbox.
+ANS. justify-content, is the property that aligns the flex items along the main axis horizontally
+Align-item, is the property that aligns flex-item vertically
 
 3. Explain the difference between:
    flex-direction: row
    flex-direction: column
+ANS> Flex-direction:row is the property that arranges flex items horizontally left to right.
+Flex-direction:column is the property that arranges flex items vertically top to bottom.
+
 4. What is the effect of using:
    flex-wrap: wrap;
-
 inside a flex container?
+ANS> The flex-wrap property is used in Flexbox to control whether flex items should stay on one line or move to the next line when there is not enough space.
 
 Section D — Code Correction
 
@@ -34,6 +40,17 @@ Questions
 Identify TWO errors.
 Rewrite the corrected CSS.
 Explain the effect of the corrected properties.
+ANS>Wrong: align-item
+no-wrap
+Correct:
+ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
 
 <!-- PLEASE create a html and css for this challenge in the css_responsiveCSS folder -->
 
