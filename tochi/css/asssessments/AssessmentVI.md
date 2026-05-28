@@ -8,7 +8,7 @@ ANS. Viewpoint meta tag is used to control how a webpage is displayed and scaled
    align-items
 in Flexbox.
 ANS. justify-content, is the property that aligns the flex items along the main axis horizontally
-Align-item, is the property that aligns flex-item vertically
+Align-items, is the property that aligns flex-item vertically
 
 3. Explain the difference between:
    flex-direction: row
