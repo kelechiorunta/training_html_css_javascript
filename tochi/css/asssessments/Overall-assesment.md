@@ -1,6 +1,6 @@
 CSS Assessment (Beginner Level)
-Student Name: _______________________
-Date: _______________________
+Student Name: ___________________
+Date: ____________________
 
 Section A — Objectives (15 Questions)
 1. Which CSS selector is used to target a class?
