@@ -38,3 +38,36 @@ list.appendChild(listItem);
 // Part 6
 
 totalBox.textContent = `Total: $${total.toFixed(2)}`;
+
+
+SOLUTION.
+
+<!-- // Part 1 - Convert this to a product array with block -->
+const products = ["Underpants:6.99", "Socks:5.99", "T-shirt:14.99", "Trousers:31.99", "Shoes:23.99"];
+
+<!-- // Part 2 - Use a for...of loop -->
+for (const product of products) {console.log(product)}
+
+<!-- // Part 3 - Split the each item to be an array -->
+  const itemArray = product.split(":");
+  const name = itemArray[0];
+  const price = Number(itemArray[1]);
+
+  <!-- // Part 4 - compute the total price by adding the total with the price of each item -->
+  total += price;
+
+<!-- // Part 5 - display each item separated by a "-" using join("-") and console.table()  -->
+<!-- let itemText = 0; -->
+
+  listItem.textContent = itemText;
+  list.appendChild(listItem);
+
+
+// Part 6 - End the for...of loop
+totalBox.textContent = `Total: $${total.toFixed(2)}`;
+
+ 
+  
+
+  
+ 
