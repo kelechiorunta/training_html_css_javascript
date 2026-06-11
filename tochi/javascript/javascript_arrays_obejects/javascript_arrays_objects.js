@@ -47,4 +47,26 @@ console.log(filterednumbers);
 // const multipliednumbers = numbers.map(multiplyByTwo);
 // console.log(multipliednumbers);
 
+// Solution
+const products = ["Underpants:6.99", "Socks:5.99", "T-shirt:14.99", "Trousers:31.99", "Shoes:23.99"];
+
+let total = 0;
+const itemTexts = [];
+
+for (const product of products) {
+  console.log(product);
+  const itemArray = product.split(":");
+  const name = itemArray[0];
+  const price = Number(itemArray[1]);
+  total += price;
+  itemTexts.push(`${name} - $${price.toFixed(2)}`);
+}
+
+console.log(itemTexts.join(" - "));
+console.table(products.map((product) => {
+  const [name, price] = product.split(":");
+  return { name, price: Number(price) };
+}));
+console.log(`Total: $${total.toFixed(2)}`);
+
 
