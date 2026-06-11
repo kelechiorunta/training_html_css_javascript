@@ -22,6 +22,8 @@ totalBox.textContent = "";
 // "Trousers:31.99",
 // "Shoes:23.99",
 
+
+
 // Part 2 - Use a for of loop
 
 // Part 3 - Split the each item to be an array
