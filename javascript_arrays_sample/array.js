@@ -27,3 +27,4 @@ for (const product of products) {
 console.log("total", total);
 console.log(newProducts);
 console.table(newProducts);
+
