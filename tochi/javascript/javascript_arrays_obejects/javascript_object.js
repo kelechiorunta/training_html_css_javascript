@@ -11,3 +11,21 @@ console.table(person);
 console.log(person.name);
 console.log(person.fullName);
 console.log(person.fullName());
+
+// Task... Create an object inside name object with properties firstName and lastName, and a method fullName that returns the full name of the person.
+const person = {
+    name: {
+        firstName: "John", 
+        lastName: "Doe"
+    },
+    age: 30,
+    city: "New York",
+    fullName: function() {
+        return `${this.name.firstName} ${this.name.lastName}`;
+    }
+};
+console.log(person);
+console.table(person);
+console.log(person.name.firstName);
+console.log(person.name.lastName);
+console.log(person.fullName());
