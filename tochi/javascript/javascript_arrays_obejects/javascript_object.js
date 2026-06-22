@@ -41,7 +41,7 @@ console.log(person3["9ice"]); // Accessing property with special characters in i
 
 // add two properties  to the object one Gender, 2) state of origin, ensure that the properties are showing and also assign values to the properties and display them in the console.
 person.gender = "Male";
-person.stateOfOrigin = "Lagos";
+person["state Of Origin"] = "Lagos";
 console.log(person);
 console.table(person);
 console.log(person.gender);
