@@ -3,6 +3,7 @@ const array2 = [1, 2, 3, 4, 5];
 console.log(array1 == array2);
 
 const shoppingitems = ["milk", "bread", "eggs", "cheese"];
+console.log(shoppingitems);
 
 const randomitems = [1, "hello", true, null, undefined, { name: "John" }, [1, 2, 3]];
 
