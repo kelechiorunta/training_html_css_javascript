@@ -45,6 +45,6 @@ person["state Of Origin"] = "Lagos";
 console.log(person);
 console.table(person);
 console.log(person.gender);
-console.log(person.stateOfOrigin);
+console.log(person["state Of Origin"]);
 
 
