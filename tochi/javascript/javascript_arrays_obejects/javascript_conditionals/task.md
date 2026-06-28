@@ -34,7 +34,7 @@ function getGradeWithIf(score) {
 Using switch:
 function getGradeWithSwitch(score) 
 {
-    switch (true) {
+    switch (true) { // true value is used here to represent truthiness of the score value. So we can alternatively use switch(score)
         case (score >= 70 && score <= 100):
             return 'A';
         case (score >= 60 && score <= 69):
