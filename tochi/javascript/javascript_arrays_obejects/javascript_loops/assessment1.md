@@ -9,6 +9,9 @@ Question 1
 
 Write a program that prints the numbers 1 to 10 using the for Loop.
 
+let p = 1; p <= 10; p++ {
+    console.log(p)
+}
 Expected Output
 
 1
@@ -26,6 +29,11 @@ Part B: while Loop (3 Questions)
 Question 5
 
 Using a while loop, print the numbers 10 down to 1.
+let a = 10
+while (a >= 1){
+    console.log(a);
+    a--;
+}
 
 Expected Output
 
@@ -44,6 +52,11 @@ Part C: do...while Loop (3 Questions)
 Question 8
 
 Using a do...while loop, print the numbers 1 to 5.
+let b = 1
+do {
+    console.log(b)
+    b++
+} while(b <= 5)
 
 Expected Output
 
