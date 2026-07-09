@@ -64,4 +64,25 @@ const square = (n) => n * n;
 console.log(subtract(10, 4)); // 6
 console.log(square(5));       // 25
 
+function alertWithoutReturn() {
+    console.log(1 + 1);
+}
+let result = alertWithoutReturn();
+console.log(result); // undefined
+
+
+
+function alertWithReturn() {
+    console.log(1 + 1);
+    return "Function completed";
+}
+let result = alertWithReturn();
+console.log(result);
+
+
+
+
+
+
+
 
