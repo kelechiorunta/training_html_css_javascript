@@ -5,6 +5,10 @@ function printMe(){
 }
 printMe();
 
+
+
+
+
 // Parameters and Arguments
 function printValues(name, age) {
     console.log("Name: " + name);
