@@ -26,8 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.startViewTransition) {
     document.body.addEventListener("click", (e) => {
       if (e.target.matches("div")) {
-        // e.preventDefault();
-        // alert("hello");
+
         document.startViewTransition(() =>
           e.target.classList.toggle("animate"),
         );

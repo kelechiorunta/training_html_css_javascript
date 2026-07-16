@@ -14,7 +14,7 @@ for (let i = 0; i < 12; i++) {
     
    
     square.classList.add('square');
-    square.setAttribute('style', `background-color: ${colors[i]};`);
+    square.setAttribute('style', `background-color: ${colors[i]}; `);
     
     container.appendChild(square);
 }
