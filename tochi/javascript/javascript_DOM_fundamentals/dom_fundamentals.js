@@ -22,5 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".container");
 
   container.append(makeCard("Card 1", "This is my first card"));
+
+  if (document.startViewTransition) {
+    document.body.addEventListener("click", (e) => {
+      if (e.target.matches("div")) {
+        // e.preventDefault();
+        // alert("hello");
+        document.startViewTransition(() =>
+          e.target.classList.toggle("animate"),
+        );
+      }
+    });
+  }
 });
 console.log(document)

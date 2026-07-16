@@ -32,3 +32,46 @@ article {
   top: 0;
   left: 0;
 }
+
+.animate {
+  background-color: blue;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.9);
+  color: white;
+  transition:
+    background-color 1s ease-in-out,
+    box-shadow 1s ease-in-out;
+  contain: layout;
+  view-transition-name: temp;
+}
+
+/* Enter */
+::view-transition-new(temp):only-child {
+  animation:
+    300ms ease 50ms both fade-in,
+    300ms ease 50ms both slide-up;
+}
+
+/* Exit */
+::view-transition-old(temp):only-child {
+  animation:
+    200ms ease 150ms both fade-out,
+    200ms ease 150ms both slide-up;
+}
+
+@keyframes slide-up {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.6;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.6;
+  }
+}
