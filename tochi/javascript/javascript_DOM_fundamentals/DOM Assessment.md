@@ -332,10 +332,11 @@ products.forEach(product => {
   viewButton.textContent = 'View Product';
 
   card.append(title, priceTag, viewButton);
+  card.classList.add('product-card');
 
  3
   container.append(card);
 });
 
 4
-  card.classList.add('product-card');
+  
