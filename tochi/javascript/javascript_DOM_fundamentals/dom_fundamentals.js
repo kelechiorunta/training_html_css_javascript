@@ -19,14 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return node;
   }
 
-  const container = document.querySelector(".container");
+  // const container = document.querySelector(".card_container");
 
-  container.append(makeCard("Card 1", "This is my first card"));
+  // container.append(makeCard("Card 1", "This is my first card"));
 
   if (document.startViewTransition) {
     document.body.addEventListener("click", (e) => {
-      if (e.target.matches("div")) {
-
+      if (e.target.matches("img")) {
         document.startViewTransition(() =>
           e.target.classList.toggle("animate"),
         );
@@ -34,4 +33,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-console.log(document)
+console.log(document);
