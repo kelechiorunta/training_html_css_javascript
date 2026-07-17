@@ -26,6 +26,27 @@ Learn how to access multiple elements of the same HTML tag and iterate through t
 5. Change the text of the first list item to **"Watermelon"**.
 6. Change the text color of the last list item to **blue**.
 
+ANS:
+ 1
+const listItems = document.getElementsByTagName('li');
+
+2
+console.log(listItems);
+
+ 3
+console.log("Total items:", listItems.length);
+
+ 4
+for (let i = 0; i < listItems.length; i++) {
+  console.log(listItems[i].textContent);
+}
+
+5
+listItems[0].textContent = "Watermelon";
+
+ 6
+listItems[listItems.length - 1].style.color = "blue";
+
 ---
 
 ## Task 2: Manipulating Elements with `setAttribute()`
@@ -50,6 +71,29 @@ Learn how to modify HTML element attributes dynamically.
 5. Set its `href` attribute to `"https://developer.mozilla.org"`.
 6. Make the link open in a new tab by setting the appropriate attribute.
 7. Log all the attributes of the anchor element.
+
+ANS:
+1
+const imageElement = document.querySelector('img');
+
+2
+imageElement.src = 'dog.jpg'; 
+
+3
+imageElement.alt = 'Dog Image';
+
+4
+const anchorElement = document.querySelector('a');
+
+5
+anchorElement.href = 'https://developer.mozilla.org';
+
+6
+anchorElement.target = '_blank';
+
+7
+console.log(anchorElement.attributes);
+
 
 ---
 
@@ -93,6 +137,27 @@ Learn how to add, remove, toggle, and check CSS classes.
 5. Check whether the element contains the class `active`.
 6. Log the element's complete list of classes.
 
+ANS:
+
+1
+const cardDiv = document.querySelector('div');
+
+2
+cardDiv.classList.add('active');
+
+3
+cardDiv.classList.remove('card');
+
+4
+cardDiv.classList.toggle('hidden');
+
+5
+const isActive = cardDiv.classList.contains('active');
+console.log('Contains "active"?:', isActive);
+
+6
+console.log(cardDiv.classList);
+
 ---
 
 ## Task 4: Creating Elements with `document.createElement()`
@@ -119,6 +184,33 @@ Learn how to create and insert new HTML elements into the page.
 6. Create a `<button>` with the text **"Click Me"**.
 7. Append the button inside the container.
 
+ANS:
+
+// 0. Select the container first so we have a place to insert our new elements
+const container = document.getElementById('container');
+
+1
+const heading = document.createElement('h2');
+
+2
+heading.textContent = 'JavaScript DOM Practice';
+
+3
+container.append(heading);
+
+4
+const paragraph = document.createElement('p');
+paragraph.textContent = 'Learning the DOM is fun!';
+
+5
+container.append(paragraph);
+
+6
+const button = document.createElement('button');
+button.textContent = 'Click Me';
+
+7
+container.append(button);
 ---
 
 ## Task 5: Build a Simple Product Card
@@ -146,6 +238,41 @@ Using only JavaScript:
 7. Create a **Buy Now** button.
 8. Append everything to the product card.
 9. Finally, append the product card into the `products` container.
+
+ANS:
+1
+const productCard = document.createElement('div');
+
+2
+productCard.classList.add('product-card');
+
+3
+const productImage = document.createElement('img');
+productImage.src = 'headphones.jpg';
+productImage.alt = 'Wireless Headphones';
+
+4
+const productName = document.createElement('h3');
+productName.textContent = 'Premium Wireless Headphones';
+
+5
+const productDesc = document.createElement('p');
+productDesc.textContent = 'Experience immersive sound with active noise cancellation and 40-hour battery life.';
+
+6
+const productPrice = document.createElement('p');
+productPrice.textContent = '$199.99';
+productPrice.classList.add('price'); // Optional: handy for CSS styling later!
+
+7
+const buyButton = document.createElement('button');
+buyButton.textContent = 'Buy Now';
+
+8
+productCard.append(productImage, productName, productDesc, productPrice, buyButton);
+
+9
+productsContainer.append(productCard);
 
 ---
 
@@ -183,3 +310,32 @@ const products = [
    * Add a **View Product** button.
 3. Append every card to the page.
 4. Add a CSS class named `product-card` to every generated card using `classList.add()`.
+
+ANS:
+
+1
+products.forEach(product => {
+  
+  2a
+  const card = document.createElement('div');
+
+  2b
+  const title = document.createElement('h3');
+  title.textContent = product.name;
+
+  2c
+  const priceTag = document.createElement('p');
+  priceTag.textContent = `$${product.price}`;
+
+  2d
+  const viewButton = document.createElement('button');
+  viewButton.textContent = 'View Product';
+
+  card.append(title, priceTag, viewButton);
+
+ 3
+  container.append(card);
+});
+
+4
+  card.classList.add('product-card');
