@@ -26,9 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.startViewTransition) {
     document.body.addEventListener("click", (e) => {
       if (e.target.matches("img")) {
-        document.startViewTransition(() =>
-          e.target.classList.toggle("animate"),
-        );
+        document.startViewTransition(() => {
+          // e.target.classList.remove("animate");
+          e.target.classList.toggle("animate");
+        });
       }
     });
   }
