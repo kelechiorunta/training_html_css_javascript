@@ -16,7 +16,12 @@ Learn how HTML events work by using:
 ### Instructions
 
 1. Create a button that displays the text **"Click Me"**.
+
+<button>Click Me</button>
+
 2. When the button is clicked, change the text inside a paragraph from:
+
+
 
 ```
 No button has been clicked.
@@ -32,6 +37,22 @@ The button was clicked!
 
 ---
 
+
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="message">No button has been clicked.</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", function() {
+      message.textContent = "The button was clicked!";
+    });
+  </script>
+</body>
+
+
 ## Task 2: Event Handler Function
 
 Instead of writing JavaScript directly inside the HTML attribute:
@@ -45,6 +66,19 @@ Welcome to JavaScript Events!
 ```
 
 ---
+
+<body>
+  <button onclick="showMessage()">Click Me</button>
+  <p id="message">No button has been clicked.</p>
+
+  <script>
+    function showMessage() {
+      const message = document.getElementById("message");
+      message.textContent = "Welcome to JavaScript Events!";
+    }
+  </script>
+</body>
+
 
 ## Task 3: DOM Event Listener
 
@@ -60,6 +94,23 @@ Using JavaScript:
    - Change the button text to **"Clicked!"**.
 
 ---
+
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="message">No button has been clicked.</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", function() {
+      message.textContent = "Welcome to JavaScript Events!";
+      button.style.backgroundColor = "green";
+      button.textContent = "Clicked!";
+    });
+  </script>
+</body>
+
 
 ## Bonus Challenge ⭐
 
@@ -77,6 +128,32 @@ No button has been clicked.
 - Change its text back to **"Click Me"**.
 
 ---
+
+
+<html>
+<body>
+  <button id="myButton">Click Me</button>
+  <button id="resetButton">Reset</button>
+  <p id="message">No button has been clicked.</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const resetButton = document.getElementById("resetButton");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", function() {
+      message.textContent = "Welcome to JavaScript Events!";
+      button.style.backgroundColor = "green";
+      button.textContent = "Clicked!";
+    });
+
+    resetButton.addEventListener("click", function() {
+      message.textContent = "No button has been clicked.";
+      button.style.backgroundColor = "";
+      button.textContent = "Click Me";
+    });
+  </script>
+</body>
 
 ## Expected Skills
 
