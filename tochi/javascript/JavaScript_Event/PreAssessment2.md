@@ -1,4 +1,4 @@
-DOM Fundamentals
+DOM Fundamentals 10mins
 
 Using JavaScript, explain how to:
 
