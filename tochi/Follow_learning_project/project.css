@@ -28,3 +28,16 @@ header {
   justify-content: space-between;
 }
 
+nav ul {
+  width: "90%";
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li a:link {
+  text-decoration: none;
+}
