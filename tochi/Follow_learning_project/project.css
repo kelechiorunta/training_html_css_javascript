@@ -200,10 +200,17 @@ navbar{
 .info-card h3 { margin-bottom: 10px; font-size: 18px; }
 .info-card p { font-size: 13px; color: #eef1f8; line-height: 1.5; } */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; }
+/* Mobile and default sizing */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1a1a2e;
+}
 
 main {
   min-width: 100%;
@@ -213,10 +220,12 @@ main {
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: Segoe UI, Arial, sans-serif;
+  font-family:
+    Segoe UI,
+    Arial,
+    sans-serif;
   color: #1a1a2e;
 }
-
 
 header {
   position: fixed;
@@ -246,6 +255,9 @@ header {
   display: none;
   /* align-items: center; */
   /* margin:auto; */
+  /* display: flex;
+  align-items: center; */
+  /* margin: auto; */
 }
 
 .navbar nav ul {
@@ -281,7 +293,6 @@ header {
   flex-shrink: 0;
   margin-left: 20px;
 }
-
 
 .hero {
   position: relative;
@@ -344,7 +355,6 @@ header {
   margin-top: 60px;
 }
 
-
 .dots {
   display: flex;
   gap: 8px;
@@ -355,13 +365,12 @@ header {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .dot.active {
   background: #fff;
 }
-
 
 .about {
   text-align: center;
@@ -388,8 +397,14 @@ header {
   font-size: 15px;
 }
 
-
-
+/* .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+} */
 
 .about-img {
   width: 100%;
@@ -421,16 +436,16 @@ header {
   color: #eef1f8;
   line-height: 1.5;
 }
+
 .about-grid {
   display: grid;
   gap: 24px;
 }
 
-@media screen and (min-width: 612px) {
+/* @media screen and (min-width: 612px) {
   .navbar nav {
   display: flex;
   align-items: center;
-  /* margin:auto; */
 }
   .navbar #hamburger_icon {
     display: none;
@@ -444,6 +459,24 @@ header {
   margin: 0 auto;
   text-align: left;
 }
+} */
+
+/* Custom viewport to display elements from 583px and above*/
+
+@media screen and (min-width: 583px) {
+  .navbar nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar #hamburger_icon {
+    display: none;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
-
-
