@@ -34,6 +34,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 		<style type="text/css">
 			body {
+				overflow-x: hidden;
 				font-family: 'Montserrat', sans-serif;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
@@ -129,7 +130,7 @@
 			}
 
 			/* Responsive header sizing */
-			.navbar .container {
+			.navbar .container-fluid {
 				display: flex;
 				align-items: center;
 			}
@@ -144,51 +145,41 @@
 			}
 
 			.navbar-nav {
-				gap: 0.35rem;
+				gap: 0.15rem;
 			}
 
 			.navbar-nav .nav-link {
-				font-size: 0.78rem;
+				font-size: 0.76rem;
 				font-weight: 600;
-				padding: 0.5rem 0.45rem !important;
+				padding: 0.5rem 0.38rem !important;
 				white-space: nowrap;
 			}
 
 			.navbar-nav .btn-orange {
-				font-size: 0.78rem;
-				padding: 0.65rem 1rem !important;
+				font-size: 0.76rem;
+				padding: 0.65rem 0.9rem !important;
 				white-space: nowrap;
-			}
-
-			@media (min-width: 992px) and (max-width: 1199.98px) {
-				.navbar-nav {
-					gap: 0.15rem;
-				}
-
-				.navbar-nav .nav-link {
-					font-size: 0.70rem;
-					padding-left: 0.3rem !important;
-					padding-right: 0.3rem !important;
-				}
-
-				.navbar-nav .btn-orange {
-					font-size: 0.70rem;
-					padding-left: 0.75rem !important;
-					padding-right: 0.75rem !important;
-				}
 			}
 
 			@media (min-width: 1200px) {
 				.navbar-nav {
-					gap: 0.55rem;
+					gap: 0.2rem;
 				}
 
 				.navbar-nav .nav-link {
-					font-size: 0.80rem;
+					font-size: 0.78rem;
+					padding-left: 0.42rem !important;
+					padding-right: 0.42rem !important;
+				}
+
+				.navbar-nav .btn-orange {
+					font-size: 0.78rem;
+					padding-left: 0.95rem !important;
+					padding-right: 0.95rem !important;
 				}
 			}
 
-			@media (max-width: 991.98px) {
+			@media (max-width: 1199.98px) {
 				.navbar-collapse {
 					background: #000;
 					padding: 1rem;
@@ -196,6 +187,16 @@
 					border-radius: 8px;
 					position: relative;
 					z-index: 9999;
+				}
+			}
+
+			@media (max-width: 575.98px) {
+				.navbar-brand .text-white {
+					font-size: 0.95rem !important;
+				}
+				.logo-badge {
+					width: 40px;
+					height: 40px;
 				}
 			}
 
@@ -277,10 +278,10 @@
 
 			<!-- Navigation -->
 			<nav
-				class="navbar navbar-expand-lg position-relative w-100 z-1 py-3 bg-black bg-opacity-75"
+				class="navbar navbar-expand-xl position-relative w-100 z-1 py-3 bg-black bg-opacity-75"
 				aria-label="Main navigation"
 			>
-				<div class="container">
+				<div class="container-fluid px-4 px-xl-5">
 					<!-- Logo -->
 					<a
 						class="navbar-brand d-flex align-items-center gap-2"
@@ -310,11 +311,11 @@
 
 					<!-- Navigation Links -->
 					<div
-						class="collapse navbar-collapse justify-content-end align-items-lg-center"
+						class="collapse navbar-collapse justify-content-end align-items-xl-center"
 						id="mainNav"
 					>
 						<ul
-							class="navbar-nav gap-lg-4 text-center align-items-lg-center"
+							class="navbar-nav gap-xl-3 text-center align-items-xl-center"
 						>
 							<li class="nav-item">
 								<a
@@ -398,7 +399,7 @@
 									>Contact Us</a
 								>
 							</li>
-							<li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+							<li class="nav-item mt-3 mt-xl-0 ms-xl-2">
 								<a
 									href="./appointment.html"
 									class="btn btn-orange px-4 py-2"
